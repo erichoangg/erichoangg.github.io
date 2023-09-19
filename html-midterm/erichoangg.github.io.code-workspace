@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "erichoangg.github.io",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "erichoangg.github.io"
+	}
+}
