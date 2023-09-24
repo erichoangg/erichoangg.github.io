@@ -1,5 +1,4 @@
 /* General page styles*/
-
 body {
     margin: 0;
   }
@@ -24,14 +23,14 @@ body {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
     padding: 1em;
+    height: 3em;
   }
   
   .card footer {
-    background-image:rgba(0,0,0,0.1); 
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0,0,0,0.1));
     border-radius: 0 0 1.5em 1.5em;
-    font-size: 1.5em;
-    line-height: 1.5em;
     padding: 1em;
+    height: 1.3em;
   }
   
   .card article img {
@@ -42,7 +41,7 @@ body {
 
   .card article {
     height: 12em;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
   }
 
@@ -52,17 +51,18 @@ body {
 
   .card header h2 {
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1.5em;
     margin: 0;
   }
 
-  .card footer {
+  .card footer p {
+    line-height: 2em;
     font-size: 1.5em;
-    line-height: em;
   }
 
   .card article p {
     margin: 0;
+    padding: 1em;
   }
 
   .card header, .card footer {
@@ -76,24 +76,14 @@ body {
 
 /* Eric's Card Styles */
 
-body {
-  margin: 0;
-}
-
-html {
-  font-family: 'Helvetica neue', Arial, 'sans serif';
-  font-size: 10px;
-  background-color: #ccc;
-}
-
 .eric-card {
   width: 35em;
   height: 22em;
   margin: 5em auto;
-  background-color: rgb(71, 86, 125);
+  background-color: rgb(64, 90, 142);
   border: 0.2em solid black;
   border-radius: 1.5em;
-  font-family: 'Futura'
+  font-family: 'Futura', 'Trebuchet MS', 'Arial', 'sans serif'
 }
 
 
@@ -101,14 +91,14 @@ html {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
   padding: 1em;
+  height: 3em;
 }
 
 .eric-footer {
-  background-image:rgba(0,0,0,0.1); 
+  background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
-  font-size: 1.5em;
-  line-height: 1.5em;
   padding: 1em;
+  height: 1.3em;
 }
 
 .eric-card article img {
@@ -119,7 +109,7 @@ html {
 
 .eric-card article {
   height: 12em;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
 
@@ -127,29 +117,28 @@ html {
   padding: 1em;
 }
 
-.eric-card header h2 {
+.eric-header h2 {
   font-size: 2em;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.eric-footer p {
   line-height: 2em;
-  margin: 0;
-  color: white;
-}
-
-.eric-card footer {
   font-size: 1.5em;
-  line-height: em;
-  color: white;
 }
 
-.eric-card article p {
+.card article p {
   margin: 0;
+  padding: 1em;
 }
 
-.eric-card header, .eric-card footer {
+.eric-header, .eric-footer {
   height: 3em;
   padding: 1em;
+  color: white;
 }
 
 h2, p {
   margin: 0;
 }
-
