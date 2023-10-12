@@ -9,7 +9,7 @@ body {
       max-width: 100%;
       display: block;
       float: left;
-      padding: 1%;
+      padding: 0.5%;
   }
   
   .logo {
@@ -65,8 +65,20 @@ body {
   .photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
   }
 
- 
+  @media screen and (max-width: 500px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .photos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 0px;
+    }
+  }
 
