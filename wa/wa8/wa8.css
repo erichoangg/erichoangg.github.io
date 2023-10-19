@@ -1,0 +1,68 @@
+html {
+    font-family: "futura";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightcyan;
+}
+nav{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: navy;
+    animation-duration: 1s;
+    animation-name: dropdown;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s ease-in-out;
+}
+
+nav a:hover{
+    background-color: blueviolet;
+}
+
+
+img{
+    width:30vw;
+    height: 30vh;
+    transition: width 0.5s, height 0.5s;
+}
+
+img:hover{
+    width: 35%;
+    height: 35%;
+}
+
+
+#red-ball{
+    background-color: navy;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-duration: 5s;
+    animation-name: ball;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes ball{
+    from{
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
