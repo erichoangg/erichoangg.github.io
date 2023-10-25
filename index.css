@@ -684,6 +684,55 @@ header{
 }
 
 @media screen and (max-width: 400px){
+    
+    main{
+        font-size: 85%;
+    }
+    
+    body{
+        margin: 0;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        font-size: 120%;
+        border: 0.25em solid burlywood;
+        padding: 1%;
+    }
+    
+    #img-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sax{
+        width: 50%;
+    }
+    
+    .background{
+        background-image: url(img/gray.jpeg);
+        background-repeat: repeat;
+    }
+
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+        margin: 0.25%;
+        font-size: 150%
+    }
+    
+    .desc-main1,
+    .desc-main2{
+        justify-content: center;
+        text-align: center;
+        padding: 2%;
+    }
+
     .div1-wrapper,
     .div2-wrapper,
     .div3-wrapper,
