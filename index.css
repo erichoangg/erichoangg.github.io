@@ -861,4 +861,121 @@ header{
         flex-direction: column;
         border-bottom: 2px solid black;
     }
+
+    .dropdown1{
+        padding: 2.25%;
+    }
+    
+    .item-3{
+        display: none;
+    }
+    
+    .dropdown1:hover + .item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown2{
+        padding: 2.25%;
+    }
+    
+    .div2-item-3{
+        display: none;
+    }
+    
+    .dropdown2:hover + .div2-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown3{
+        padding: 2.25%;
+    }
+    
+    .div3-item-3{
+        display: none;
+    }
+    
+    .dropdown3:hover + .div3-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown4{
+        padding: 2.25%;
+    }
+    
+    .div4-item-3{
+        display: none;
+    }
+    
+    .dropdown4:hover + .div4-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown5{
+        padding: 2.25%;
+    }
+    
+    .div5-item-3{
+        display: none;
+    }
+    
+    .dropdown5:hover + .div5-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown6{
+        padding: 2.25%;
+    }
+    
+    .div6-item-3{
+        display: none;
+    }
+    
+    .dropdown6:hover + .div6-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown7{
+        padding: 2.25%;
+    }
+    
+    .div7-item-3{
+        display: none;
+    }
+    
+    .dropdown7:hover + .div7-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown8{
+        padding: 2.25%;
+    }
+    
+    .div8-item-3{
+        display: none;
+    }
+    
+    .dropdown8:hover + .div8-item-3{
+        display: block;
+        width: 250%;
+    }
+    
+    .dropdown9{
+        padding: 2.25%;
+    }
+    
+    .div9-item-3{
+        display: none;
+    }
+    
+    .dropdown9:hover + .div9-item-3{
+        display: block;
+        width: 250%;
+    }
 }
