@@ -21,6 +21,11 @@ header{
     padding: 1%;
 }
 
+h1,
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #img-wrapper{
     display: flex;
     justify-content: center;
@@ -643,6 +648,7 @@ header{
     grid-row-start: 5;
     grid-column-start: 1;
     padding: 2.25%;
+    transition: all 0.7s ease-in-out;
 }
 
 .item-3{
@@ -651,7 +657,7 @@ header{
     grid-row-start: 6;
 }
 
-.dropdown1:hover + .item-3{
+.dropdown1:hover + .item-3, .item-3:hover{
     display: block;
     width: 250%;
 }
@@ -810,6 +816,11 @@ header{
         font-size: 120%;
         border: 0.25em solid burlywood;
         padding: 1%;
+    }
+
+    h1,
+    h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
     #img-wrapper{
