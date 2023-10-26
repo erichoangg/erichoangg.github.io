@@ -1,16 +1,17 @@
 html{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: darkgray;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 400px){
 
 main{
-    font-size: 85%;
+    font-size: 110%;
 }
 
 body{
-    margin: 0;
+    margin: 0px;
 }
 
 header{
@@ -19,6 +20,10 @@ header{
     font-size: 120%;
     border: 0.25em solid burlywood;
     padding: 1%;
+}
+
+strong{
+    font-size: 1.5em;
 }
 
 h1,
@@ -648,18 +653,19 @@ h2{
     grid-row-start: 5;
     grid-column-start: 1;
     padding: 2.25%;
-    transition: all 0.7s ease-in-out;
+    /* transition: al; */
 }
 
 .item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown1:hover + .item-3, .item-3:hover{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown2{
@@ -671,12 +677,13 @@ h2{
 .div2-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown2:hover + .div2-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown3{
@@ -688,12 +695,13 @@ h2{
 .div3-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown3:hover + .div3-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown4{
@@ -705,12 +713,13 @@ h2{
 .div4-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown4:hover + .div4-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown5{
@@ -722,12 +731,13 @@ h2{
 .div5-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown5:hover + .div5-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown6{
@@ -739,12 +749,13 @@ h2{
 .div6-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown6:hover + .div6-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown7{
@@ -756,12 +767,13 @@ h2{
 .div7-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown7:hover + .div7-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown8{
@@ -773,16 +785,18 @@ h2{
 .div8-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 6;
 }
 
 .dropdown8:hover + .div8-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
 }
 
 .dropdown9{
     grid-row-start: 5;
+    grid-row-end: 6;
     grid-column-start: 1;
     padding: 2.25%;
 }
@@ -790,20 +804,25 @@ h2{
 .div9-item-3{
     display: none;
     grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 6;
 }
 
 .dropdown9:hover + .div9-item-3{
     display: block;
-    width: 250%;
+    width: 100%;
+}
+
+footer{
+    padding: 25%;
 }
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     
     main{
-        font-size: 85%;
+        font-size: 110%;
     }
     
     body{
@@ -829,6 +848,10 @@ h2{
         align-items: center;
     }
     
+    strong{
+        font-size: 1.5em;
+    }
+
     #sax{
         width: 50%;
     }
@@ -875,15 +898,17 @@ h2{
 
     .dropdown1{
         padding: 2.25%;
+        flex-wrap: wrap;
     }
     
     .item-3{
         display: none;
+        flex-wrap: wrap;
     }
     
     .dropdown1:hover + .item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown2{
@@ -896,7 +921,7 @@ h2{
     
     .dropdown2:hover + .div2-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown3{
@@ -909,7 +934,7 @@ h2{
     
     .dropdown3:hover + .div3-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown4{
@@ -922,7 +947,7 @@ h2{
     
     .dropdown4:hover + .div4-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown5{
@@ -935,7 +960,7 @@ h2{
     
     .dropdown5:hover + .div5-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown6{
@@ -948,7 +973,7 @@ h2{
     
     .dropdown6:hover + .div6-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown7{
@@ -961,7 +986,7 @@ h2{
     
     .dropdown7:hover + .div7-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown8{
@@ -974,7 +999,7 @@ h2{
     
     .dropdown8:hover + .div8-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
     
     .dropdown9{
@@ -987,6 +1012,6 @@ h2{
     
     .dropdown9:hover + .div9-item-3{
         display: block;
-        width: 250%;
+        width: 100%;
     }
 }
