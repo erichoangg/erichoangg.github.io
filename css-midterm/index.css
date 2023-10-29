@@ -46,7 +46,7 @@ h2{
 }
 
 .background{
-    background-image: url(img/gray.jpeg);
+    background-image: url(../img/gray.jpeg);
     background-repeat: repeat;
 }
 
@@ -867,7 +867,7 @@ footer{
     }
     
     .background{
-        background-image: url(img/gray.jpeg);
+        background-image: url(../img/gray.jpeg);
         background-repeat: repeat;
     }
 
