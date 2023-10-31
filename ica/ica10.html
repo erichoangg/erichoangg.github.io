@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+    <style>
+        button{
+            font-family: Futura, Helvetica, Arial;
+            background-color: aquamarine;
+            text-align: center;
+            border: 2px solid rgb(200 200 0 / 0.6);
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Press Me to See Chris!</button>
+    <button id="hi" type="button">Say Hi!</button>
+
+    <script>
+        const button = document.querySelector("button");
+        const greeting = document.getElementById("hi");
+
+        button.addEventListener("click", addPicture);
+        hi.addEventListener("click", changeName);
+
+        function addPicture() {
+            document.body.style.background = "url('../img/chris.jpg') no-repeat center top";
+        }
+
+        function changeName() {
+            hi.innerHTML = `<h1>Hello!</h1>`;
+        }
+    </script>
+</body>
+</html>
