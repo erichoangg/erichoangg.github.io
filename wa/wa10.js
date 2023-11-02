@@ -4,7 +4,7 @@ const story = document.querySelector('.story');
 
 let storyText = "It was 94 fahrenheit outside, so :insertx: explored the great outdoors. Upon reaching :inserty:, they yelled, 'Giggity!', then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: wants to weigh 300 pounds, and it was a hot day.";
 let insertX = ["Michael Jackson", "The Pope", "Mordecai"];
-const insertY = ["South Korea", "the gym", "McDonald's"];
+const insertY = ["Chick-fil-a", "the gym", "McDonald's"];
 const insertZ = ["made a sandwich", "chugged an energy drink", "ate a burger"];
 
 
@@ -30,10 +30,13 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round((300/14));
-    const temperature =  Math.round((94-32) * (5/9));
+    const weight = Math.round((300/14)) + " stone"; 
+    const temperature =  Math.round((94-32) * (5/9)) + " centigrade"; 
+
     newStory = newStory.replace("94 fahrenheit", temperature);
+
     newStory = newStory.replace("300 pounds", weight);
+    
   }
 
   story.textContent = newStory;
