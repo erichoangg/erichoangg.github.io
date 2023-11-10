@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-    font-family: futura;
+    font-family: futura, Trebuchet MS,Arial,sans-serif;
     text-align: center;
   }
 
@@ -31,9 +31,10 @@ h1 {
   
   button {
     border: 0;
-    background: rgba(150,150,150,0.6);
-    text-shadow: 1px 1px 1px white;
+    background-color: #28282B;
+    font-family: futura, Trebuchet MS,Arial,sans-serif;
     border: 1px solid #999;
+    color: white;
     position: absolute;
     cursor: pointer;
     top: 2px;
