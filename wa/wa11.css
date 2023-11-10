@@ -39,24 +39,29 @@ h1 {
     top: 2px;
     left: 2px;
   }
-  
+
+  .thumb-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .thumb-bar img {
     display: block;
     width: 20%;
     float: left;
     cursor: pointer;
-    
+    transition: all 0.3s ease-in-out;
+  }
+
+  .thumb-bar img:hover{
+    opacity: 0.5;
   }
 
   .imgPlace{
     display: grid;
-  }  
-
-
-  .thumb-bar{
-    grid-row-start: 2;
-  }
-
+  } 
+  
   img{
     width: 100%;
   }
