@@ -4,7 +4,7 @@ let question = "";
 let answer = "";
 
 newBtn.addEventListener("click", getQuote);
-// ansBtn.addEventListener("click", getAns);
+ansBtn.addEventListener("click", getAns);
 const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
 async function getQuote(){
