@@ -8,6 +8,8 @@ let categoryTxt = document.querySelector('#js-category-text')
 
 let answer = '';
 let category = 'general';
+const categoryArr = ['general', 'programming', 'knock-knock', 'dad'];
+let categoryIdx = 0;
 
 // this is the endpoint for the API that we want to get a reponse from
 const endpoint = 'https://official-joke-api.appspot.com/random_joke';
@@ -47,19 +49,14 @@ function displayAnswer() {
 }
 
 function displayCategory(category) {
-    categoryTxt.textContent = category;
+    categoryTxt.textContent = categoryArr[categoryIdx];
 }
 
 function categorySelect(){
-    if (category === 'general'){
-        category = 'programming';
-    }
-    else if (category === 'programming'){
-        category = 'knock-knock';
-    }
-    else{
-        category ='general';
-    }
+    categoryTxt.textContent = categoryArr[categoryIdx];
+    categoryIdx++;
+
+    if (categoryIdx === categoryArr.length) categoryIdx = 0;
     getQuote();
 }
 // we run getQuote once when the script first loads to populate a question
