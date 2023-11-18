@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background-color: #3aafa9;
   }
   
   *,
@@ -12,7 +13,6 @@ html {
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #c9bd95;
   }
   
   .app {
@@ -64,7 +64,7 @@ html {
   }
   
   .twitter {
-    background-color: #1da1f2;
+    background-color: #2b7a78;
     text-decoration: none;
   }
   
@@ -73,18 +73,23 @@ html {
   }
   
   .new-quote {
-    background-color: #4A2B0F;
+    background-color: #17252a;
     margin-bottom: 15px;
   }
   
   .new-quote:hover {
-    background-color: #6d3b0e;
+    background-color: #1e7fbb;
   }
   
   .new-quote:disabled {
     background-color: #cccccc;
     color: #666666;
     cursor: not-allowed;
+  }
+
+  .new-category {
+    background-color:darkolivegreen;
+    margin-bottom: 15px;
   }
   
   @media screen and (max-width: 600px) {
