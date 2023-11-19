@@ -8,7 +8,7 @@ let categoryTxt = document.querySelector('#js-category-text')
 
 let answer = '';
 let category = 'general';
-const categoryArr = ['general', 'programming', 'knock-knock', 'dad'];
+const categoryArr = ['general', 'programming', 'dad'];
 let categoryIdx = 0;
 
 // this is the endpoint for the API that we want to get a reponse from
@@ -25,9 +25,8 @@ async function getQuote() {
         const json = await response.json();
         
         // JSON is a dictionary, which is like a list; we call specific pieces of information out based on the 'key' associated with that value
-
-        displayCategory(json['type']);
-
+        const joke = json['type'];
+        displayCategory(joke);
         displayQuote(json['setup']);
         answer = json['punchline'];
         answerTxt.textContent = '';
@@ -48,15 +47,19 @@ function displayAnswer() {
     answerTxt.textContent = answer;
 }
 
-function displayCategory(category) {
+// this function shows the category
+function displayCategory() {
     categoryTxt.textContent = categoryArr[categoryIdx];
 }
 
+// this function changes the category
 function categorySelect(){
     categoryTxt.textContent = categoryArr[categoryIdx];
     categoryIdx++;
 
-    if (categoryIdx === categoryArr.length) categoryIdx = 0;
+    if (categoryIdx === categoryArr.length){
+    categoryIdx = 0;
+    }
     getQuote();
 }
 // we run getQuote once when the script first loads to populate a question
