@@ -72,6 +72,9 @@ raise();
 console.log("Problem 5", humanResources);
 
 // Problem 6
- for (const home of humanResources.employees){
-    
+const workingFromHome = ["Anna", "Sam"];
+ for (let i = 0; i < humanResources.employees.length; i++){
+    let currentEmployee = humanResources.employees[i];
+    currentEmployee.wfh = workingFromHome.includes(currentEmployee.firstName);
  }
+ console.log("Problem 6", humanResources);
