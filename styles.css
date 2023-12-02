@@ -1,0 +1,21 @@
+html{
+    color: #F5F5DC;
+}
+
+body{
+    background-color: #040406;
+}
+
+h1{
+    color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    font-size: 500%;
+}
+
+#logo{
+    width: 1%;
+    display: flex;
+    justify-content: flex-start;
+}
