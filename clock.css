@@ -1,0 +1,42 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.container {
+    padding-top: 15%;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    grid-template-columns: auto auto;
+}
+
+#const{
+    color:royalblue;
+    grid-column: 1;
+}
+
+#clock{
+    color:skyblue;
+    grid-column: 2;
+}
+
+#hour-word,
+#month-word,
+#day-word,
+#year-word,
+#minute-word{
+    grid-column-start: 1;
+}
+
+#hour,
+#month,
+#day,
+#year,
+#minute{
+    grid-column-start: 2;
+}
