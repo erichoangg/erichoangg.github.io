@@ -80,8 +80,3 @@ function time(){
 time();
 
 setInterval(time, 1000);
-
-const clock = {
-    month: 1,
-    day: 1
-}

@@ -1,0 +1,112 @@
+html{
+    background-color:beige;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#add,
+#minus,
+#multiply,
+#divide{
+    grid-column: 4;
+}
+
+#clear,
+#equals,
+#reset,
+#add{
+    grid-row: 2;
+}
+
+#seven,
+#eight,
+#nine,
+#minus{
+    grid-row: 3;
+}
+
+#four,
+#five,
+#six,
+#multiply{
+    grid-row: 4;
+}
+
+#three,
+#two,
+#one,
+#divide{
+    grid-row: 5;
+}
+
+#zero{
+    grid-row: 6;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#zero,
+#add,
+#minus,
+#multiply,
+#divide,
+#clear,
+#reset,
+#equals{
+    background-color: #15202b;
+    color: #ffffff;
+    border: darkgray solid 1px;
+    font-size: 3em;
+}
+
+#add,
+#minus,
+#multiply,
+#divide,
+#clear,
+#reset,
+#equals{
+    color:slategrey;
+}
+
+#result{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #003366;
+    color: white;
+    font-size: 3em;
+    border: darkgray solid 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+#phone-number{
+    font-size: 3em;
+    grid-row: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: darkgray solid 5px;
+}
+
+button:hover{
+    opacity: 0.75;
+}
