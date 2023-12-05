@@ -1,112 +1,136 @@
-html{
-    background-color:beige;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@media screen and (min-width: 800px){
+    
+    html{
+        background-color: lightblue;
+        margin: 2%;
+    }
+
+    body{
+        padding: 1%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #15202b;
+    }
+
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .inputs{
+        grid-row: 2;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    #num1,
+    #num2,
+    #operator{
+        font-size: 1.5em;
+    }
+
+    #calculate,
+    #reset{
+        background-color: white;
+        grid-row: 3;
+        font-size: 1em;
+    }
+
+    #text{
+        grid-row: 1;
+    }
+
+    #phone-number{
+        font-size: 2em;
+        padding-top: 30%;
+        min-height: 3%;
+    }
+
+    #display{
+        font-size: 2em;
+        padding-top: 5%;
+    }
+
+    #error{
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
+
+    #display{
+        border: 1px black solid;
+        background-color: white;
+        text-align: center;
+        padding: 1%;
+    }
 }
 
-#header{
-    display: flex;
-    justify-content: center;
-}
+@media screen and (max-width: 800px){
+    html{
+        background-color: lightblue;
+        margin: 2%;
+    }
 
-.buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    body{
+        padding: 10%;        
+        padding-top: 1%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #15202b;
+    }
 
-#add,
-#minus,
-#multiply,
-#divide{
-    grid-column: 4;
-}
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 
-#clear,
-#equals,
-#reset,
-#add{
-    grid-row: 2;
-}
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
 
-#seven,
-#eight,
-#nine,
-#minus{
-    grid-row: 3;
-}
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1%;
+    }
 
-#four,
-#five,
-#six,
-#multiply{
-    grid-row: 4;
-}
+    #num1,
+    #num2,
+    #operator{
+        font-size: 1.5em;
+        text-align: center;
+    }
 
-#three,
-#two,
-#one,
-#divide{
-    grid-row: 5;
-}
+    #calculate,
+    #reset{
+        background-color: white;
+        font-size: 1em;
+    }
 
-#zero{
-    grid-row: 6;
-}
+    #phone-number{
+        font-size: 2em;
+        padding-top: 25%;
+    }
 
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine,
-#zero,
-#add,
-#minus,
-#multiply,
-#divide,
-#clear,
-#reset,
-#equals{
-    background-color: #15202b;
-    color: #ffffff;
-    border: darkgray solid 1px;
-    font-size: 3em;
-}
+    #display{
+        font-size: 2em;
+        padding-top: 5%;
+    }
 
-#add,
-#minus,
-#multiply,
-#divide,
-#clear,
-#reset,
-#equals{
-    color:slategrey;
-}
+    #error{
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
 
-#result{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    background-color: #003366;
-    color: white;
-    font-size: 3em;
-    border: darkgray solid 5px;
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-}
-
-#phone-number{
-    font-size: 3em;
-    grid-row: 7;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    border: darkgray solid 5px;
-}
-
-button:hover{
-    opacity: 0.75;
+    #display{
+        border: 1px black solid;
+        background-color: white;
+        text-align: center;
+        padding: 1%;
+    }
 }

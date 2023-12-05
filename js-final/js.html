@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Number Input</title>
+    <title>Phone Number</title>
     <link rel="stylesheet" href="js.css">
-    <script src="js.js" defer></script>
 </head>
 <body>
-    <div id="header">
-        <h1>Enter your phone number: </h1>
-    </div>  
-    <div class="flex">
-        <div class="buttons">
-            <div id="result" type="text">0</div>
-            <button id="one" data-value="1">1</button>
-            <button id="two" data-value="2">2</button>
-            <button id="three" data-value="3">3</button>
-            <button id="four" data-value="4">4</button>
-            <button id="five" data-value="5">5</button>
-            <button id="six" data-value="6">6</button>
-            <button id="seven" data-value="7">7</button>
-            <button id="eight" data-value="8">8</button>
-            <button id="nine" data-value="9">9</button>
-            <button id="zero" data-value="0">0</button>
-            <button id="reset" data-value="RESET">RESET</button>
-            <button id="clear" data-value="AC">AC</button>
-            <button id="divide" data-value="/">/</button>
-            <button id="multiply" data-value="x">x</button>
-            <button id="minus" data-value="-">-</button>
-            <button id="add" data-value="+">+</button>
-            <button id="equals" data-value="=">=</button>
-            <p id="phone-number">--- --- ----</p>
-        </div>
+    <div class="container">
+        <form>
+            <label for="num1" id="text" for="choose"><h1>Please enter your phone number: </h1></label>
+            <div class="inputs">
+                <input id="num1" type="number">
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input id="num2" type="number">
+            </div>
+
+            <button id="calculate" type="button">Calculate</button>
+            <button id="reset" type="button">Reset</button>
+            <div id="phone-number">Phone number: </div>
+            <div id="display"></div>
+            <div id="error"></div>
+        </form>
     </div>
+    
+    <script src="js.js"></script>
 </body>
 </html>
