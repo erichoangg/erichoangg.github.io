@@ -17,7 +17,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
-    h1{
+    label{
         font-size: 2em;
         text-align: center;
     }
@@ -87,7 +87,7 @@
         flex-direction: column;
     }
 
-    h1{
+    label{
         font-size: 2em;
         text-align: center;
     }
