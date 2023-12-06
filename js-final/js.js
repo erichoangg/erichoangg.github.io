@@ -24,7 +24,7 @@ function calculateNum(){
 
     // Validating if user inputs the same number for both inputs
     if(num1 === num2){
-        error.textContent = "Cannot use input same number in a single operation.";
+        error.textContent = "Calculation input numbers must be different.";
         setTimeout(() => {
             error.textContent = "";
             }, 2000);
@@ -67,7 +67,7 @@ function calculateNum(){
 
     // Validating that the digit is a whole, non-negative number
     if (result < 0 || result % 1 != 0){
-        error.textContent = "Invalid phone number digit";
+        error.textContent = "Phone number digit must be whole and non-negative.";
         setTimeout(() => {
             error.textContent = "";
             }, 2000); 
@@ -84,13 +84,18 @@ function calculateNum(){
     }
   
     // Update used number variables so numbers and operators cannot be used twice in a row and add to phone number
-    usedNum1 = num1;
-    usedNum2 = num2;
-    usedOperator = operator.value;
-    display.textContent += result;
+    else{
+        usedNum1 = num1;
+        usedNum2 = num2;
+        usedOperator = operator.value;
+        display.textContent += result;
+    }
 }
 
 // Function that lets user start over and input new numbers
 function resetNum(){
+    usedNum1 = null;
+    usedNum2 = null;
+    usedOperator = null;
     display.textContent = "";
 }
