@@ -36,20 +36,17 @@ ul{
     flex-direction: column;
 }
 
-.info-wrapper{
+.info-wrapper,
+.img-wrapper{
     display: flex;
     flex-direction: column;
     padding-left: 15%;
 }
 
-.img-wrapper{
+/* .img-wrapper{
     display: flex;
     justify-content: center;
-}
-
-#js-clock{
-    border: 1px white solid;
-}
+} */
 
 h1{
     padding-bottom: 1em;
@@ -98,6 +95,6 @@ a:hover{
 }
 
 #js-clock{
-    grid-column: 2;
-    border: 1px white solid;
+    align-items: end;
+    padding-left: 31.5%;
 }
