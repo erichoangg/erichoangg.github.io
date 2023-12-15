@@ -1,136 +1,59 @@
-@media screen and (min-width: 800px){
-    
-    html{
-        background-color: lightblue;
-        margin: 2%;
-    }
-
-    body{
-        padding: 1%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #15202b;
-    }
-
-    .container{
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    label{
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .inputs{
-        grid-row: 2;
-        text-align: center;
-        padding-bottom: 1%;
-    }
-
-    #num1,
-    #num2,
-    #operator{
-        font-size: 1.5em;
-    }
-
-    #calculate,
-    #reset{
-        background-color: white;
-        grid-row: 3;
-        font-size: 1em;
-    }
-
-    #text{
-        grid-row: 1;
-    }
-
-    #phone-number{
-        font-size: 2em;
-        padding-top: 30%;
-        min-height: 3%;
-    }
-
-    #display{
-        font-size: 2em;
-        padding-top: 5%;
-    }
-
-    #error{
-        padding-top: 5%;
-        font-size: 1.5em;
-    }
-
-    #display{
-        border: 1px black solid;
-        background-color: white;
-        text-align: center;
-        padding: 1%;
-    }
+html{
+    margin: 2%;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@media screen and (max-width: 800px){
-    html{
-        background-color: lightblue;
-        margin: 2%;
-    }
+body{
+    background-color: lightblue;
+}
 
-    body{
-        padding: 10%;        
-        padding-top: 1%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #15202b;
-    }
+.container{
+    display: flex;
+    justify-content: center;
+}
 
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
+#phone-number{
+    padding-top: 25%;
+}
 
-    label{
-        font-size: 2em;
-        text-align: center;
-    }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .inputs{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1%;
-    }
+.inputs{
+    display: flex;
+    justify-content: center;
+}
 
-    #num1,
-    #num2,
-    #operator{
-        font-size: 1.5em;
-        text-align: center;
-    }
+input,
+#operator{
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 1%;
+    align-items: center;
+    border: 3px solid black;
+    margin: 1%;
+}
 
-    #calculate,
-    #reset{
-        background-color: white;
-        font-size: 1em;
-    }
+input,
+#calculate,
+#reset{
+    width: 15%;
+}
 
-    #phone-number{
-        font-size: 2em;
-        padding-top: 25%;
-    }
+#reset{
+    background-color: red;
+}
 
-    #display{
-        font-size: 2em;
-        padding-top: 5%;
-    }
-
-    #error{
-        padding-top: 5%;
-        font-size: 1.5em;
-    }
-
-    #display{
-        border: 1px black solid;
-        background-color: white;
-        text-align: center;
-        padding: 1%;
-    }
+#submit,
+#calculate,
+#reset{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1em;
+    background-color: white;
+    margin: 1%;
 }

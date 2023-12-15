@@ -5,18 +5,20 @@ const calculate = document.getElementById("calculate");
 const display = document.getElementById("display");
 const error = document.getElementById("error");
 const reset = document.getElementById("reset")
+let submit = document.getElementById("submit");
 
 let usedNum1 = null;
 let usedNum2 = null;
 let usedOperator = null;
-
+let result = 0;
 
 calculate.addEventListener("click", calculateNum);
-reset.addEventListener("click", resetNum)
+reset.addEventListener("click", resetNum);
+submit.addEventListener("click", submitValue);
 
 // Function that calculates the user's input and displays it to the phone number
 function calculateNum(){
-    let result = 0;
+
     let count = 0;
 
     const num1 = parseFloat(inputNum1.value);
@@ -98,4 +100,15 @@ function resetNum(){
     usedNum2 = null;
     usedOperator = null;
     display.textContent = "";
+}
+
+// Function that displays the submitted phone number
+function submitValue(){
+    if (display.textContent.length !== 10){
+        alert("Invalid phone number!");
+    }
+
+    else{
+    alert(`You submitted: ${display.textContent}!`);
+    }
 }
