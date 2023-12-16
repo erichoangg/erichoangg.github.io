@@ -10,20 +10,22 @@
     <div class="container">
         <form>
             <h1 id="header">Please calculate each individual digit of your phone number:</h1>
-            <div class="inputs">
-                <input id="num1" type="number">
-                <select id="operator">
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-                <input id="num2" type="number">
-            </div>
+            <div class="calculator">
+                <div class="inputs">
+                    <input id="num1" type="number">
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input id="num2" type="number">
+                </div>
 
-            <button id="calculate" type="button">=</button>
-            <button id="reset" type="button">Reset</button>
-            <div id="phone-number">Phone number: </div>
+                <button id="calculate" type="button">=</button>
+                <button id="reset" type="button">Reset</button>
+            </div>
+            <div id="phone-number"><strong>Phone number: </strong></div>
             <div id="display"></div>
             <button id="submit">Submit</button>
             <div id="error"></div>

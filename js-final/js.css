@@ -5,7 +5,8 @@ html{
 }
 
 body{
-    background-color: lightblue;
+    background-color: #051650;
+    color: #fffada;
 }
 
 h1{
@@ -27,9 +28,18 @@ form{
     align-items: center;
 }
 
+.calculator{
+    border: 5px #0492c2 solid;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inputs{
     display: flex;
     justify-content: center;
+    margin: 1%;
 }
 
 input,
@@ -42,14 +52,31 @@ input,
     margin: 1%;
 }
 
+#num1,
+#num2{
+    background-color: #555555;
+    color: #fffada;
+}
+
+#operator,
+#reset{
+    background-color: #878787;
+    color: #fffada;
+}
+
 input,
 #calculate,
 #reset{
     width: 15%;
+    color: #000057;
 }
 
-#reset{
-    background-color: red;
+#calculate{
+    background-color: #8d021f;
+}
+
+#submit{
+    background-color:cadetblue;
 }
 
 #submit,
@@ -58,6 +85,13 @@ input,
     border-radius: 10px;
     border: 2px solid black;
     font-size: 1em;
-    background-color: white;
     margin: 1%;
+    color: #fffada;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit:hover,
+#calculate:hover,
+#reset:hover{
+    background-color:#91bad6;
 }
