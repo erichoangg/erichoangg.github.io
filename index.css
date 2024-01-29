@@ -113,3 +113,8 @@ a:hover{
     align-items: end;
     padding-left: 31.5%;
 }
+
+.img{
+    max-width: 15em;
+    padding: 5%;
+}
