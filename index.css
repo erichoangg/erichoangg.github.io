@@ -4,11 +4,11 @@
 }
 
 html{
-    color: #F5F5DC;
+    color:black;
 }
 
 body{
-    background-color: #040406;
+    background-color: darkgray;
     position: relative;
     height: 100%;
     margin: 2%;
